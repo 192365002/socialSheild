@@ -20,10 +20,10 @@ try:
         _cred = credentials.Certificate(_fb_cred_path)
         firebase_admin.initialize_app(_cred)
     FIREBASE_ADMIN_AVAILABLE = True
-    print('✅ Firebase Admin SDK initialized.')
+    print('[OK] Firebase Admin SDK initialized.')
 except Exception as _fb_err:
     FIREBASE_ADMIN_AVAILABLE = False
-    print(f'⚠️  Firebase Admin SDK not available: {_fb_err}')
+    print(f'[WARNING] Firebase Admin SDK not available: {_fb_err}')
     print('   Registration/Login will fall back to backend-only auth.')
 
 app = Flask(__name__)
