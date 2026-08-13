@@ -1,0 +1,45 @@
+# Environment and Secret Files
+.env
+backend/.env
+frontend/.env
+firebase-credentials.json
+backend/firebase-credentials.json
+
+# Android build files
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/capture
+/android/build
+/android/app/build
+/android/.gradle
+/android/local.properties
+
+# Appium framework outputs
+/AppiumFramework/target/
+/AppiumFramework/logs/
+/AppiumFramework/reports/failedScreenshots/
+~$*
+
+# Python virtual environment and cache
+/backend/venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.zip
+/apache-maven-3.9.6/
+/app-build/
+/flutter_app/android/build/
+/flutter_app/build/

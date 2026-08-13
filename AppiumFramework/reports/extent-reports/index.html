@@ -1,0 +1,5078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SocialShield Automation Reports</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 24px; }
+        .card { background-color: #1e293b; border: 1px solid #334155; border-radius: 12px; margin-bottom: 24px; }
+        .header { border-bottom: 2px solid #38bdf8; padding-bottom: 12px; margin-bottom: 30px; }
+        .table { color: #f8fafc; }
+        .table thead th { background-color: #334155; border-bottom: 2px solid #475569; border-top: none; }
+        .table td { border-top: 1px solid #334155; vertical-align: middle; font-size: 14px; }
+        .badge-success { background-color: #10b981; }
+        .badge-danger { background-color: #ef4444; }
+        .table-danger { background-color: #451a1a !important; }
+        .metric-value { font-size: 28px; font-weight: bold; color: #38bdf8; }
+        .text-muted { color: #94a3b8 !important; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <h2>SocialShield E2E Automation Dashboard</h2>
+            <p class="text-muted">Interactive ExtentReports Mockup representation of Appium execution logs.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <div class="text-muted">Total Tests</div>
+                    <div class="metric-value">500</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <div class="text-muted text-success">Passed</div>
+                    <div class="metric-value text-success">498</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <div class="text-muted text-danger">Failed</div>
+                    <div class="metric-value text-danger">2</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <div class="text-muted">Pass Rate</div>
+                    <div class="metric-value">99.6%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-4">
+            <h4 class="mb-3">Detailed Test Cases</h4>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="width: 100px;">Case ID</th>
+                            <th style="width: 150px;">Module</th>
+                            <th style="width: 250px;">Description</th>
+                            <th class="text-center" style="width: 100px;">Result</th>
+                            <th class="text-center" style="width: 100px;">Duration</th>
+                            <th>Execution Details</th>
+                            <th class="text-center" style="width: 110px;">Defect ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+    <tr class="">
+        <td class="text-center font-weight-bold">TC001</td>
+        <td>Authentication</td>
+        <td>Google Login Success Fallback Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC002</td>
+        <td>Authentication</td>
+        <td>Google Login Failure Error Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC003</td>
+        <td>Authentication</td>
+        <td>Invalid Session Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC004</td>
+        <td>Authentication</td>
+        <td>Logout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC005</td>
+        <td>Authentication</td>
+        <td>Session Persistence After Device Pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC006</td>
+        <td>Authentication</td>
+        <td>Auto Login on App Restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.32s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC007</td>
+        <td>Authentication</td>
+        <td>Multiple Login Attempts Lockout</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC008</td>
+        <td>Authentication</td>
+        <td>Network Failure During Login Simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC009</td>
+        <td>Authentication</td>
+        <td>Token Expired Token Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC010</td>
+        <td>Authentication</td>
+        <td>Unauthorized User Blockage</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC011</td>
+        <td>Authentication</td>
+        <td>Google Login Success Fallback Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC012</td>
+        <td>Authentication</td>
+        <td>Google Login Failure Error Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.06s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC013</td>
+        <td>Authentication</td>
+        <td>Invalid Session Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC014</td>
+        <td>Authentication</td>
+        <td>Logout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC015</td>
+        <td>Authentication</td>
+        <td>Session Persistence After Device Pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.27s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC016</td>
+        <td>Authentication</td>
+        <td>Auto Login on App Restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC017</td>
+        <td>Authentication</td>
+        <td>Multiple Login Attempts Lockout</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC018</td>
+        <td>Authentication</td>
+        <td>Network Failure During Login Simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC019</td>
+        <td>Authentication</td>
+        <td>Token Expired Token Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.51s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC020</td>
+        <td>Authentication</td>
+        <td>Unauthorized User Blockage</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC021</td>
+        <td>Authentication</td>
+        <td>Google Login Success Fallback Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.51s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC022</td>
+        <td>Authentication</td>
+        <td>Google Login Failure Error Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.35s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC023</td>
+        <td>Authentication</td>
+        <td>Invalid Session Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.81s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC024</td>
+        <td>Authentication</td>
+        <td>Logout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC025</td>
+        <td>Authentication</td>
+        <td>Session Persistence After Device Pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC026</td>
+        <td>Authentication</td>
+        <td>Auto Login on App Restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC027</td>
+        <td>Authentication</td>
+        <td>Multiple Login Attempts Lockout</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.44s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC028</td>
+        <td>Authentication</td>
+        <td>Network Failure During Login Simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC029</td>
+        <td>Authentication</td>
+        <td>Token Expired Token Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC030</td>
+        <td>Authentication</td>
+        <td>Unauthorized User Blockage</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.21s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC031</td>
+        <td>Authentication</td>
+        <td>Google Login Success Fallback Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.51s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC032</td>
+        <td>Authentication</td>
+        <td>Google Login Failure Error Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC033</td>
+        <td>Authentication</td>
+        <td>Invalid Session Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.1s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC034</td>
+        <td>Authentication</td>
+        <td>Logout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC035</td>
+        <td>Authentication</td>
+        <td>Session Persistence After Device Pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.87s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC036</td>
+        <td>Authentication</td>
+        <td>Auto Login on App Restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.13s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC037</td>
+        <td>Authentication</td>
+        <td>Multiple Login Attempts Lockout</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.54s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC038</td>
+        <td>Authentication</td>
+        <td>Network Failure During Login Simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.23s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC039</td>
+        <td>Authentication</td>
+        <td>Token Expired Token Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC040</td>
+        <td>Authentication</td>
+        <td>Unauthorized User Blockage</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.17s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC041</td>
+        <td>Authentication</td>
+        <td>Google Login Success Fallback Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.36s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC042</td>
+        <td>Authentication</td>
+        <td>Google Login Failure Error Flow</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.37s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC043</td>
+        <td>Authentication</td>
+        <td>Invalid Session Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC044</td>
+        <td>Authentication</td>
+        <td>Logout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC045</td>
+        <td>Authentication</td>
+        <td>Session Persistence After Device Pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC046</td>
+        <td>Authentication</td>
+        <td>Auto Login on App Restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC047</td>
+        <td>Authentication</td>
+        <td>Multiple Login Attempts Lockout</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC048</td>
+        <td>Authentication</td>
+        <td>Network Failure During Login Simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.72s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC049</td>
+        <td>Authentication</td>
+        <td>Token Expired Token Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.25s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC050</td>
+        <td>Authentication</td>
+        <td>Unauthorized User Blockage</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.85s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC051</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.86s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC052</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Description Content</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC053</td>
+        <td>Dashboard</td>
+        <td>Verify Stats Row Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC054</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan image screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC055</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan video screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.27s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC056</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan audio screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.21s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC057</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan text screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.56s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC058</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan URL screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC059</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan profile screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC060</td>
+        <td>Dashboard</td>
+        <td>Verify Scan History Quick Action Card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.87s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC061</td>
+        <td>Dashboard</td>
+        <td>Verify Fraud Map Quick Action Card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC062</td>
+        <td>Dashboard</td>
+        <td>Verify Live Activity Feed Component</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC063</td>
+        <td>Dashboard</td>
+        <td>Open Recent Scan Detail</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.14s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC064</td>
+        <td>Dashboard</td>
+        <td>Verify Canvas Security Trend Chart Rendering</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.33s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC065</td>
+        <td>Dashboard</td>
+        <td>Verify Risk Exposure Breakdown Chart Component</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.56s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC066</td>
+        <td>Dashboard</td>
+        <td>Dashboard Quick Layout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC067</td>
+        <td>Dashboard</td>
+        <td>Performance Metric Counter Check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC068</td>
+        <td>Dashboard</td>
+        <td>Real-Time Sync on Back Navigate</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.35s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC069</td>
+        <td>Dashboard</td>
+        <td>Notification Header Bell Click</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC070</td>
+        <td>Dashboard</td>
+        <td>User Profile Name Loading in Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC071</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC072</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Description Content</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC073</td>
+        <td>Dashboard</td>
+        <td>Verify Stats Row Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC074</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan image screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC075</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan video screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.28s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC076</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan audio screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.89s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC077</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan text screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC078</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan URL screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.99s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC079</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan profile screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC080</td>
+        <td>Dashboard</td>
+        <td>Verify Scan History Quick Action Card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC081</td>
+        <td>Dashboard</td>
+        <td>Verify Fraud Map Quick Action Card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.14s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC082</td>
+        <td>Dashboard</td>
+        <td>Verify Live Activity Feed Component</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC083</td>
+        <td>Dashboard</td>
+        <td>Open Recent Scan Detail</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC084</td>
+        <td>Dashboard</td>
+        <td>Verify Canvas Security Trend Chart Rendering</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC085</td>
+        <td>Dashboard</td>
+        <td>Verify Risk Exposure Breakdown Chart Component</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.9s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC086</td>
+        <td>Dashboard</td>
+        <td>Dashboard Quick Layout Verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC087</td>
+        <td>Dashboard</td>
+        <td>Performance Metric Counter Check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC088</td>
+        <td>Dashboard</td>
+        <td>Real-Time Sync on Back Navigate</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.06s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC089</td>
+        <td>Dashboard</td>
+        <td>Notification Header Bell Click</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.44s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC090</td>
+        <td>Dashboard</td>
+        <td>User Profile Name Loading in Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.37s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC091</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC092</td>
+        <td>Dashboard</td>
+        <td>Verify Trust Score Description Content</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.24s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC093</td>
+        <td>Dashboard</td>
+        <td>Verify Stats Row Display</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC094</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan image screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC095</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan video screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC096</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan audio screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.87s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC097</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan text screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC098</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan URL screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.09s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC099</td>
+        <td>Dashboard</td>
+        <td>Navigate to scan profile screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC100</td>
+        <td>Dashboard</td>
+        <td>Verify Scan History Quick Action Card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC101</td>
+        <td>Profile Detection</td>
+        <td>Fake Profile Detection with Bots Indicators</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.32s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC102</td>
+        <td>Profile Detection</td>
+        <td>Safe Profile Detection</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC103</td>
+        <td>Profile Detection</td>
+        <td>Suspicious Profile Detection (Keyword Match)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.32s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC104</td>
+        <td>Profile Detection</td>
+        <td>Verification of Confidence Score Generation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC105</td>
+        <td>Profile Detection</td>
+        <td>Check Recommendations Generation for Fake Profile</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC106</td>
+        <td>Profile Detection</td>
+        <td>Empty Profile Fields Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC107</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Negative Followers</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.47s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC108</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Extremely Large Followers Count</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.95s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC109</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Account Age Zero Days</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.98s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC110</td>
+        <td>Profile Detection</td>
+        <td>Accuracy Check - Balanced Bot Indicator Profile</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC111</td>
+        <td>Profile Detection</td>
+        <td>Accurate Verdict Check for Safe Influencer</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC112</td>
+        <td>Profile Detection</td>
+        <td>Verify Duplicate Profile Scanning Speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC113</td>
+        <td>Profile Detection</td>
+        <td>Verify Error Handling in Profile Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.05s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC114</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 45% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC115</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 80% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC116</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 10% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC117</td>
+        <td>Profile Detection</td>
+        <td>Verify Special Characters in Username field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC118</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Blank Bio field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC119</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Giant Bio text (1000 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.21s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC120</td>
+        <td>Profile Detection</td>
+        <td>Verify Response Time for profile scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC121</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Verdict Label Match in Results Screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.44s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC122</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Zero Followers and Zero Following</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC123</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Large Negative Values (Boundary Case)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.47s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC124</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Score and Confidence Consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.1s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC125</td>
+        <td>Profile Detection</td>
+        <td>Multiple consecutive profile scans</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC126</td>
+        <td>Profile Detection</td>
+        <td>Fake Profile Detection with Bots Indicators</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC127</td>
+        <td>Profile Detection</td>
+        <td>Safe Profile Detection</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.33s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC128</td>
+        <td>Profile Detection</td>
+        <td>Suspicious Profile Detection (Keyword Match)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC129</td>
+        <td>Profile Detection</td>
+        <td>Verification of Confidence Score Generation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC130</td>
+        <td>Profile Detection</td>
+        <td>Check Recommendations Generation for Fake Profile</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC131</td>
+        <td>Profile Detection</td>
+        <td>Empty Profile Fields Validation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC132</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Negative Followers</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC133</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Extremely Large Followers Count</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC134</td>
+        <td>Profile Detection</td>
+        <td>Boundary Test - Account Age Zero Days</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.72s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC135</td>
+        <td>Profile Detection</td>
+        <td>Accuracy Check - Balanced Bot Indicator Profile</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC136</td>
+        <td>Profile Detection</td>
+        <td>Accurate Verdict Check for Safe Influencer</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.03s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC137</td>
+        <td>Profile Detection</td>
+        <td>Verify Duplicate Profile Scanning Speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC138</td>
+        <td>Profile Detection</td>
+        <td>Verify Error Handling in Profile Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.44s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC139</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 45% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC140</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 80% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC141</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Classification Limits for 10% Probability</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.01s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC142</td>
+        <td>Profile Detection</td>
+        <td>Verify Special Characters in Username field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC143</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Blank Bio field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC144</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Giant Bio text (1000 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC145</td>
+        <td>Profile Detection</td>
+        <td>Verify Response Time for profile scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC146</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Verdict Label Match in Results Screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC147</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Zero Followers and Zero Following</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC148</td>
+        <td>Profile Detection</td>
+        <td>Profile Scan with Large Negative Values (Boundary Case)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC149</td>
+        <td>Profile Detection</td>
+        <td>Verify Risk Score and Confidence Consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC150</td>
+        <td>Profile Detection</td>
+        <td>Multiple consecutive profile scans</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC151</td>
+        <td>History</td>
+        <td>Load History Feed Successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC152</td>
+        <td>History</td>
+        <td>Search History by Existing Item Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.27s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC153</td>
+        <td>History</td>
+        <td>Search History by Non-Existing Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.96s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC154</td>
+        <td>History</td>
+        <td>Clear Search Field Query and Reload All</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.08s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC155</td>
+        <td>History</td>
+        <td>Filter History by IMAGE Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.48s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC156</td>
+        <td>History</td>
+        <td>Filter History by TEXT Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC157</td>
+        <td>History</td>
+        <td>Reset Filter chips back to ALL</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.81s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC158</td>
+        <td>History</td>
+        <td>Click History Item and Open Detailed Results Screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC159</td>
+        <td>History</td>
+        <td>Delete History Scan Record</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC160</td>
+        <td>History</td>
+        <td>Verify Sorting by Date Order in History Feed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC161</td>
+        <td>History</td>
+        <td>History Empty State Component check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC162</td>
+        <td>History</td>
+        <td>History Scroll Performance Check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.25s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC163</td>
+        <td>History</td>
+        <td>Navigating out of History page via back key</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC164</td>
+        <td>History</td>
+        <td>Verify Sync with DB on Delete Actions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC165</td>
+        <td>History</td>
+        <td>Navigate back to Home from history</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC166</td>
+        <td>History</td>
+        <td>Load History Feed Successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC167</td>
+        <td>History</td>
+        <td>Search History by Existing Item Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC168</td>
+        <td>History</td>
+        <td>Search History by Non-Existing Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC169</td>
+        <td>History</td>
+        <td>Clear Search Field Query and Reload All</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC170</td>
+        <td>History</td>
+        <td>Filter History by IMAGE Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.5s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC171</td>
+        <td>History</td>
+        <td>Filter History by TEXT Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC172</td>
+        <td>History</td>
+        <td>Reset Filter chips back to ALL</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.16s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC173</td>
+        <td>History</td>
+        <td>Click History Item and Open Detailed Results Screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.01s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC174</td>
+        <td>History</td>
+        <td>Delete History Scan Record</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.48s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC175</td>
+        <td>History</td>
+        <td>Verify Sorting by Date Order in History Feed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.51s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC176</td>
+        <td>History</td>
+        <td>History Empty State Component check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC177</td>
+        <td>History</td>
+        <td>History Scroll Performance Check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC178</td>
+        <td>History</td>
+        <td>Navigating out of History page via back key</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.95s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC179</td>
+        <td>History</td>
+        <td>Verify Sync with DB on Delete Actions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.94s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC180</td>
+        <td>History</td>
+        <td>Navigate back to Home from history</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.0s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC181</td>
+        <td>History</td>
+        <td>Load History Feed Successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC182</td>
+        <td>History</td>
+        <td>Search History by Existing Item Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC183</td>
+        <td>History</td>
+        <td>Search History by Non-Existing Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC184</td>
+        <td>History</td>
+        <td>Clear Search Field Query and Reload All</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC185</td>
+        <td>History</td>
+        <td>Filter History by IMAGE Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.9s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC186</td>
+        <td>History</td>
+        <td>Filter History by TEXT Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.81s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC187</td>
+        <td>History</td>
+        <td>Reset Filter chips back to ALL</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC188</td>
+        <td>History</td>
+        <td>Click History Item and Open Detailed Results Screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC189</td>
+        <td>History</td>
+        <td>Delete History Scan Record</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC190</td>
+        <td>History</td>
+        <td>Verify Sorting by Date Order in History Feed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.97s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC191</td>
+        <td>History</td>
+        <td>History Empty State Component check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC192</td>
+        <td>History</td>
+        <td>History Scroll Performance Check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.72s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC193</td>
+        <td>History</td>
+        <td>Navigating out of History page via back key</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC194</td>
+        <td>History</td>
+        <td>Verify Sync with DB on Delete Actions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.68s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC195</td>
+        <td>History</td>
+        <td>Navigate back to Home from history</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.96s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC196</td>
+        <td>History</td>
+        <td>Load History Feed Successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC197</td>
+        <td>History</td>
+        <td>Search History by Existing Item Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.13s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC198</td>
+        <td>History</td>
+        <td>Search History by Non-Existing Query</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC199</td>
+        <td>History</td>
+        <td>Clear Search Field Query and Reload All</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC200</td>
+        <td>History</td>
+        <td>Filter History by IMAGE Category</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC201</td>
+        <td>Reports</td>
+        <td>Verify Live Activity Feed Syncs Instantly on New Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC202</td>
+        <td>Reports</td>
+        <td>Verify PDF Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC203</td>
+        <td>Reports</td>
+        <td>Verify Excel Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC204</td>
+        <td>Reports</td>
+        <td>Validate Total Scans Counter Value increases</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC205</td>
+        <td>Reports</td>
+        <td>Validate Fake Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.03s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC206</td>
+        <td>Reports</td>
+        <td>Validate Suspicious Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC207</td>
+        <td>Reports</td>
+        <td>Validate Safe Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.9s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC208</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of PDF Execution Summary Data</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC209</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of Excel Workbook Column mapping</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.87s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC210</td>
+        <td>Reports</td>
+        <td>Verify Deployment Readiness Status logic</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC211</td>
+        <td>Reports</td>
+        <td>Real-Time Synchronization after Profile deletion</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC212</td>
+        <td>Reports</td>
+        <td>Check for Zero Division in Summary Reports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.48s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC213</td>
+        <td>Reports</td>
+        <td>Export reports multiple times without resource leaks</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.98s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC214</td>
+        <td>Reports</td>
+        <td>Verify Defect count mapping criteria</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC215</td>
+        <td>Reports</td>
+        <td>Finalize Reports Modules testing success status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC216</td>
+        <td>Reports</td>
+        <td>Verify Live Activity Feed Syncs Instantly on New Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC217</td>
+        <td>Reports</td>
+        <td>Verify PDF Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.13s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC218</td>
+        <td>Reports</td>
+        <td>Verify Excel Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC219</td>
+        <td>Reports</td>
+        <td>Validate Total Scans Counter Value increases</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC220</td>
+        <td>Reports</td>
+        <td>Validate Fake Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC221</td>
+        <td>Reports</td>
+        <td>Validate Suspicious Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC222</td>
+        <td>Reports</td>
+        <td>Validate Safe Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.17s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC223</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of PDF Execution Summary Data</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC224</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of Excel Workbook Column mapping</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC225</td>
+        <td>Reports</td>
+        <td>Verify Deployment Readiness Status logic</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC226</td>
+        <td>Reports</td>
+        <td>Real-Time Synchronization after Profile deletion</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC227</td>
+        <td>Reports</td>
+        <td>Check for Zero Division in Summary Reports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.05s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC228</td>
+        <td>Reports</td>
+        <td>Export reports multiple times without resource leaks</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.58s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC229</td>
+        <td>Reports</td>
+        <td>Verify Defect count mapping criteria</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.54s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC230</td>
+        <td>Reports</td>
+        <td>Finalize Reports Modules testing success status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC231</td>
+        <td>Reports</td>
+        <td>Verify Live Activity Feed Syncs Instantly on New Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC232</td>
+        <td>Reports</td>
+        <td>Verify PDF Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.58s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC233</td>
+        <td>Reports</td>
+        <td>Verify Excel Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.19s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC234</td>
+        <td>Reports</td>
+        <td>Validate Total Scans Counter Value increases</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC235</td>
+        <td>Reports</td>
+        <td>Validate Fake Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC236</td>
+        <td>Reports</td>
+        <td>Validate Suspicious Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.48s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC237</td>
+        <td>Reports</td>
+        <td>Validate Safe Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC238</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of PDF Execution Summary Data</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC239</td>
+        <td>Reports</td>
+        <td>Verify Accuracy of Excel Workbook Column mapping</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.19s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC240</td>
+        <td>Reports</td>
+        <td>Verify Deployment Readiness Status logic</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.23s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC241</td>
+        <td>Reports</td>
+        <td>Real-Time Synchronization after Profile deletion</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC242</td>
+        <td>Reports</td>
+        <td>Check for Zero Division in Summary Reports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC243</td>
+        <td>Reports</td>
+        <td>Export reports multiple times without resource leaks</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.08s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC244</td>
+        <td>Reports</td>
+        <td>Verify Defect count mapping criteria</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC245</td>
+        <td>Reports</td>
+        <td>Finalize Reports Modules testing success status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC246</td>
+        <td>Reports</td>
+        <td>Verify Live Activity Feed Syncs Instantly on New Scan</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.37s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC247</td>
+        <td>Reports</td>
+        <td>Verify PDF Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC248</td>
+        <td>Reports</td>
+        <td>Verify Excel Export Utility Generation Without Errors</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.89s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC249</td>
+        <td>Reports</td>
+        <td>Validate Total Scans Counter Value increases</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC250</td>
+        <td>Reports</td>
+        <td>Validate Fake Counter value increments</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC251</td>
+        <td>Settings</td>
+        <td>Open Settings screen successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC252</td>
+        <td>Settings</td>
+        <td>Toggle Dark Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC253</td>
+        <td>Settings</td>
+        <td>Toggle Light Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC254</td>
+        <td>Settings</td>
+        <td>Toggle Local Processing privacy setting</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.99s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC255</td>
+        <td>Settings</td>
+        <td>Toggle Auto-Save Scans switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC256</td>
+        <td>Settings</td>
+        <td>Toggle Threat Notification Alerts switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC257</td>
+        <td>Settings</td>
+        <td>Verify Profile Username loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC258</td>
+        <td>Settings</td>
+        <td>Verify Profile Email loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC259</td>
+        <td>Settings</td>
+        <td>Verify App Version Number displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC260</td>
+        <td>Settings</td>
+        <td>Verify App description displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC261</td>
+        <td>Settings</td>
+        <td>Restore Default Toggle settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC262</td>
+        <td>Settings</td>
+        <td>Navigate back to Home Dashboard</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC263</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.85s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC264</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.54s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC265</td>
+        <td>Settings</td>
+        <td>Sign Out execution from Settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC266</td>
+        <td>Settings</td>
+        <td>Open Settings screen successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.36s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC267</td>
+        <td>Settings</td>
+        <td>Toggle Dark Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.22s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC268</td>
+        <td>Settings</td>
+        <td>Toggle Light Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC269</td>
+        <td>Settings</td>
+        <td>Toggle Local Processing privacy setting</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.28s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC270</td>
+        <td>Settings</td>
+        <td>Toggle Auto-Save Scans switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC271</td>
+        <td>Settings</td>
+        <td>Toggle Threat Notification Alerts switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC272</td>
+        <td>Settings</td>
+        <td>Verify Profile Username loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC273</td>
+        <td>Settings</td>
+        <td>Verify Profile Email loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC274</td>
+        <td>Settings</td>
+        <td>Verify App Version Number displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC275</td>
+        <td>Settings</td>
+        <td>Verify App description displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.5s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC276</td>
+        <td>Settings</td>
+        <td>Restore Default Toggle settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.47s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC277</td>
+        <td>Settings</td>
+        <td>Navigate back to Home Dashboard</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC278</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.13s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC279</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC280</td>
+        <td>Settings</td>
+        <td>Sign Out execution from Settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.21s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC281</td>
+        <td>Settings</td>
+        <td>Open Settings screen successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC282</td>
+        <td>Settings</td>
+        <td>Toggle Dark Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC283</td>
+        <td>Settings</td>
+        <td>Toggle Light Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.25s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC284</td>
+        <td>Settings</td>
+        <td>Toggle Local Processing privacy setting</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC285</td>
+        <td>Settings</td>
+        <td>Toggle Auto-Save Scans switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.03s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC286</td>
+        <td>Settings</td>
+        <td>Toggle Threat Notification Alerts switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC287</td>
+        <td>Settings</td>
+        <td>Verify Profile Username loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC288</td>
+        <td>Settings</td>
+        <td>Verify Profile Email loads inside Settings card</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.44s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC289</td>
+        <td>Settings</td>
+        <td>Verify App Version Number displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.94s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC290</td>
+        <td>Settings</td>
+        <td>Verify App description displays in Info widget</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.72s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC291</td>
+        <td>Settings</td>
+        <td>Restore Default Toggle settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC292</td>
+        <td>Settings</td>
+        <td>Navigate back to Home Dashboard</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC293</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app pause</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC294</td>
+        <td>Settings</td>
+        <td>Verify Settings state remains after app restart</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC295</td>
+        <td>Settings</td>
+        <td>Sign Out execution from Settings</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC296</td>
+        <td>Settings</td>
+        <td>Open Settings screen successfully</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.13s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC297</td>
+        <td>Settings</td>
+        <td>Toggle Dark Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.94s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC298</td>
+        <td>Settings</td>
+        <td>Toggle Light Theme Mode Switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC299</td>
+        <td>Settings</td>
+        <td>Toggle Local Processing privacy setting</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC300</td>
+        <td>Settings</td>
+        <td>Toggle Auto-Save Scans switch</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC301</td>
+        <td>UI/UX</td>
+        <td>Validate Material Design 3 Layout Consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC302</td>
+        <td>UI/UX</td>
+        <td>Check Alignment of Welcome Name Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC303</td>
+        <td>UI/UX</td>
+        <td>Check Padding in Quick Stats Cards</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC304</td>
+        <td>UI/UX</td>
+        <td>Typography check on Trust Score Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.17s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="table-danger">
+        <td class="text-center font-weight-bold">TC305</td>
+        <td>UI/UX</td>
+        <td>Verify Theme State in Light Mode</td>
+        <td class="text-center"><span class="badge badge-danger">FAIL</span></td>
+        <td class="text-center">0.52s</td>
+        <td>UI element padding mismatch: Expected 16dp on Light mode container, found 12dp.</td>
+        <td class="text-center">DEF-TC305</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC306</td>
+        <td>UI/UX</td>
+        <td>Verify Theme State in Dark Mode</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC307</td>
+        <td>UI/UX</td>
+        <td>Verify Floating Bottom Bar curves and elevation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC308</td>
+        <td>UI/UX</td>
+        <td>Navigation transitions check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC309</td>
+        <td>UI/UX</td>
+        <td>Accessibility Check - Screen Reader Support</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC310</td>
+        <td>UI/UX</td>
+        <td>Tablet View Layout verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC311</td>
+        <td>UI/UX</td>
+        <td>Mobile View Layout verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC312</td>
+        <td>UI/UX</td>
+        <td>Color Contrast ratio validation on Risk Badges</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC313</td>
+        <td>UI/UX</td>
+        <td>Circular Progress score ring display dimensions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC314</td>
+        <td>UI/UX</td>
+        <td>Text wrapping check inside Scan cards</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC315</td>
+        <td>UI/UX</td>
+        <td>Screen rotation responsiveness</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.47s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC316</td>
+        <td>UI/UX</td>
+        <td>Verify Glassmorphic Card borders color</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC317</td>
+        <td>UI/UX</td>
+        <td>Font scaling responsiveness checks</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.91s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC318</td>
+        <td>UI/UX</td>
+        <td>Check alignment on Media Drop Zone</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.23s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC319</td>
+        <td>UI/UX</td>
+        <td>Text alignment inside safety recommendations block</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC320</td>
+        <td>UI/UX</td>
+        <td>Icon size consistency verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC321</td>
+        <td>UI/UX</td>
+        <td>Status bar background color consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC322</td>
+        <td>UI/UX</td>
+        <td>Text input cursor alignment</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC323</td>
+        <td>UI/UX</td>
+        <td>Verification of keyboard popup overlay</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.52s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC324</td>
+        <td>UI/UX</td>
+        <td>Check padding in settings switch items</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC325</td>
+        <td>UI/UX</td>
+        <td>Verify UI Scrollbars representation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC326</td>
+        <td>UI/UX</td>
+        <td>Validate Material Design 3 Layout Consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC327</td>
+        <td>UI/UX</td>
+        <td>Check Alignment of Welcome Name Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC328</td>
+        <td>UI/UX</td>
+        <td>Check Padding in Quick Stats Cards</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC329</td>
+        <td>UI/UX</td>
+        <td>Typography check on Trust Score Header</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.5s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC330</td>
+        <td>UI/UX</td>
+        <td>Verify Theme State in Light Mode</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC331</td>
+        <td>UI/UX</td>
+        <td>Verify Theme State in Dark Mode</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.52s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC332</td>
+        <td>UI/UX</td>
+        <td>Verify Floating Bottom Bar curves and elevation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC333</td>
+        <td>UI/UX</td>
+        <td>Navigation transitions check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.48s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC334</td>
+        <td>UI/UX</td>
+        <td>Accessibility Check - Screen Reader Support</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC335</td>
+        <td>UI/UX</td>
+        <td>Tablet View Layout verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC336</td>
+        <td>UI/UX</td>
+        <td>Mobile View Layout verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC337</td>
+        <td>UI/UX</td>
+        <td>Color Contrast ratio validation on Risk Badges</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC338</td>
+        <td>UI/UX</td>
+        <td>Circular Progress score ring display dimensions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.52s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC339</td>
+        <td>UI/UX</td>
+        <td>Text wrapping check inside Scan cards</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.99s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC340</td>
+        <td>UI/UX</td>
+        <td>Screen rotation responsiveness</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC341</td>
+        <td>UI/UX</td>
+        <td>Verify Glassmorphic Card borders color</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC342</td>
+        <td>UI/UX</td>
+        <td>Font scaling responsiveness checks</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC343</td>
+        <td>UI/UX</td>
+        <td>Check alignment on Media Drop Zone</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC344</td>
+        <td>UI/UX</td>
+        <td>Text alignment inside safety recommendations block</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC345</td>
+        <td>UI/UX</td>
+        <td>Icon size consistency verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.79s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC346</td>
+        <td>UI/UX</td>
+        <td>Status bar background color consistency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC347</td>
+        <td>UI/UX</td>
+        <td>Text input cursor alignment</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC348</td>
+        <td>UI/UX</td>
+        <td>Verification of keyboard popup overlay</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.72s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC349</td>
+        <td>UI/UX</td>
+        <td>Check padding in settings switch items</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC350</td>
+        <td>UI/UX</td>
+        <td>Verify UI Scrollbars representation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.9s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC351</td>
+        <td>Functional</td>
+        <td>Submit URL scan functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC352</td>
+        <td>Functional</td>
+        <td>Submit Text scan functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.1s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC353</td>
+        <td>Functional</td>
+        <td>Firebase integration verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC354</td>
+        <td>Functional</td>
+        <td>Room Database local storage check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.47s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="table-danger">
+        <td class="text-center font-weight-bold">TC355</td>
+        <td>Functional</td>
+        <td>Navigation via bottom tab bar items</td>
+        <td class="text-center"><span class="badge badge-danger">FAIL</span></td>
+        <td class="text-center">1.76s</td>
+        <td>Action click failed in Landscape orientation. Element overlaps with bottom bar card boundaries.</td>
+        <td class="text-center">DEF-TC355</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC356</td>
+        <td>Functional</td>
+        <td>Navigation from home grid scan type click</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC357</td>
+        <td>Functional</td>
+        <td>Verify back button action in scan page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC358</td>
+        <td>Functional</td>
+        <td>Verify back button action in result page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.7s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC359</td>
+        <td>Functional</td>
+        <td>Verify back button action in history page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC360</td>
+        <td>Functional</td>
+        <td>Verify back button action in settings page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.95s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC361</td>
+        <td>Functional</td>
+        <td>Check button states in onboarding screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.39s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC362</td>
+        <td>Functional</td>
+        <td>Verify toggle auth mode in login screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC363</td>
+        <td>Functional</td>
+        <td>Backend REST API integration check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.21s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC364</td>
+        <td>Functional</td>
+        <td>Verify details screen is scrollable</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.07s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC365</td>
+        <td>Functional</td>
+        <td>Firestore transaction counters increment accuracy</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.88s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC366</td>
+        <td>Functional</td>
+        <td>Verify offline capabilities indicator</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.16s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC367</td>
+        <td>Functional</td>
+        <td>Verify profile name matches in all panels</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.68s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC368</td>
+        <td>Functional</td>
+        <td>Toggle app state to landscape and check inputs functional</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.36s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC369</td>
+        <td>Functional</td>
+        <td>Multiple fast clicks prevention functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC370</td>
+        <td>Functional</td>
+        <td>Verify delete scanner from history works transactionally</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC371</td>
+        <td>Functional</td>
+        <td>Deep link launch verify redirect to home screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC372</td>
+        <td>Functional</td>
+        <td>Clear user preferences check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC373</td>
+        <td>Functional</td>
+        <td>Verify local processing toggled off falls back to server APIs</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC374</td>
+        <td>Functional</td>
+        <td>Verify threat alert switch updates preference key</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC375</td>
+        <td>Functional</td>
+        <td>Finalize functional suite execution status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.85s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC376</td>
+        <td>Functional</td>
+        <td>Submit URL scan functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC377</td>
+        <td>Functional</td>
+        <td>Submit Text scan functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC378</td>
+        <td>Functional</td>
+        <td>Firebase integration verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC379</td>
+        <td>Functional</td>
+        <td>Room Database local storage check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.77s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC380</td>
+        <td>Functional</td>
+        <td>Navigation via bottom tab bar items</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC381</td>
+        <td>Functional</td>
+        <td>Navigation from home grid scan type click</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC382</td>
+        <td>Functional</td>
+        <td>Verify back button action in scan page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC383</td>
+        <td>Functional</td>
+        <td>Verify back button action in result page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.76s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC384</td>
+        <td>Functional</td>
+        <td>Verify back button action in history page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.91s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC385</td>
+        <td>Functional</td>
+        <td>Verify back button action in settings page</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.9s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC386</td>
+        <td>Functional</td>
+        <td>Check button states in onboarding screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC387</td>
+        <td>Functional</td>
+        <td>Verify toggle auth mode in login screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC388</td>
+        <td>Functional</td>
+        <td>Backend REST API integration check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC389</td>
+        <td>Functional</td>
+        <td>Verify details screen is scrollable</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC390</td>
+        <td>Functional</td>
+        <td>Firestore transaction counters increment accuracy</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.32s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC391</td>
+        <td>Functional</td>
+        <td>Verify offline capabilities indicator</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC392</td>
+        <td>Functional</td>
+        <td>Verify profile name matches in all panels</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.22s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC393</td>
+        <td>Functional</td>
+        <td>Toggle app state to landscape and check inputs functional</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.75s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC394</td>
+        <td>Functional</td>
+        <td>Multiple fast clicks prevention functional check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC395</td>
+        <td>Functional</td>
+        <td>Verify delete scanner from history works transactionally</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC396</td>
+        <td>Functional</td>
+        <td>Deep link launch verify redirect to home screen</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC397</td>
+        <td>Functional</td>
+        <td>Clear user preferences check</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.94s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC398</td>
+        <td>Functional</td>
+        <td>Verify local processing toggled off falls back to server APIs</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.17s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC399</td>
+        <td>Functional</td>
+        <td>Verify threat alert switch updates preference key</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.28s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC400</td>
+        <td>Functional</td>
+        <td>Finalize functional suite execution status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.0s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC401</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Email Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.96s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC402</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Password Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.62s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC403</td>
+        <td>Validation</td>
+        <td>Input Validation - Invalid Email Format</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.01s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC404</td>
+        <td>Validation</td>
+        <td>Input Validation - Password Too Short (< 6 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC405</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Empty Profile URL input field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC406</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Giant URL string (5000 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC407</td>
+        <td>Validation</td>
+        <td>Input Validation - Numeric values in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC408</td>
+        <td>Validation</td>
+        <td>Input Validation - Emoji inputs in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.07s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC409</td>
+        <td>Validation</td>
+        <td>Verify validation error is displayed for file size limit exceeds</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.25s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC410</td>
+        <td>Validation</td>
+        <td>Verify error message for text scan character limits</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC411</td>
+        <td>Validation</td>
+        <td>Verify password match validations in signup form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.53s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC412</td>
+        <td>Validation</td>
+        <td>Verify SQL injection payload filters in url scan field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC413</td>
+        <td>Validation</td>
+        <td>Verify Cross-Site Scripting HTML tags filters in scan text field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC414</td>
+        <td>Validation</td>
+        <td>Boundary Test - Negative Account Age Days</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC415</td>
+        <td>Validation</td>
+        <td>Boundary Test - Large decimal numbers in comments fields</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.6s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC416</td>
+        <td>Validation</td>
+        <td>Blank username input error verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC417</td>
+        <td>Validation</td>
+        <td>Verify boundary checks on likes/posts ratio</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC418</td>
+        <td>Validation</td>
+        <td>Validate network retry count boundaries</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.01s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC419</td>
+        <td>Validation</td>
+        <td>Verify UI inputs reset on form cancellation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC420</td>
+        <td>Validation</td>
+        <td>Finalize validation suite execution status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.41s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC421</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Email Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.92s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC422</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Password Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.24s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC423</td>
+        <td>Validation</td>
+        <td>Input Validation - Invalid Email Format</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC424</td>
+        <td>Validation</td>
+        <td>Input Validation - Password Too Short (< 6 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC425</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Empty Profile URL input field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.04s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC426</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Giant URL string (5000 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC427</td>
+        <td>Validation</td>
+        <td>Input Validation - Numeric values in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.28s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC428</td>
+        <td>Validation</td>
+        <td>Input Validation - Emoji inputs in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC429</td>
+        <td>Validation</td>
+        <td>Verify validation error is displayed for file size limit exceeds</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC430</td>
+        <td>Validation</td>
+        <td>Verify error message for text scan character limits</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC431</td>
+        <td>Validation</td>
+        <td>Verify password match validations in signup form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.46s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC432</td>
+        <td>Validation</td>
+        <td>Verify SQL injection payload filters in url scan field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.94s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC433</td>
+        <td>Validation</td>
+        <td>Verify Cross-Site Scripting HTML tags filters in scan text field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.56s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC434</td>
+        <td>Validation</td>
+        <td>Boundary Test - Negative Account Age Days</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.74s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC435</td>
+        <td>Validation</td>
+        <td>Boundary Test - Large decimal numbers in comments fields</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.08s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC436</td>
+        <td>Validation</td>
+        <td>Blank username input error verification</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC437</td>
+        <td>Validation</td>
+        <td>Verify boundary checks on likes/posts ratio</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC438</td>
+        <td>Validation</td>
+        <td>Validate network retry count boundaries</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.57s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC439</td>
+        <td>Validation</td>
+        <td>Verify UI inputs reset on form cancellation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.98s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC440</td>
+        <td>Validation</td>
+        <td>Finalize validation suite execution status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.5s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC441</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Email Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.3s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC442</td>
+        <td>Validation</td>
+        <td>Validate Mandatory Password Field in Login Form</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC443</td>
+        <td>Validation</td>
+        <td>Input Validation - Invalid Email Format</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.19s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC444</td>
+        <td>Validation</td>
+        <td>Input Validation - Password Too Short (< 6 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC445</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Empty Profile URL input field</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.64s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC446</td>
+        <td>Validation</td>
+        <td>Verify Boundary Value - Giant URL string (5000 chars)</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.22s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC447</td>
+        <td>Validation</td>
+        <td>Input Validation - Numeric values in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.38s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC448</td>
+        <td>Validation</td>
+        <td>Input Validation - Emoji inputs in Bio details</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.06s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC449</td>
+        <td>Validation</td>
+        <td>Verify validation error is displayed for file size limit exceeds</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC450</td>
+        <td>Validation</td>
+        <td>Verify error message for text scan character limits</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC451</td>
+        <td>Security & Performance</td>
+        <td>Verify SQL injection filters in text input</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC452</td>
+        <td>Security & Performance</td>
+        <td>Verify SSL pinning validation status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC453</td>
+        <td>Security & Performance</td>
+        <td>Verify AES-256 local database encryption latency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.01s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC454</td>
+        <td>Security & Performance</td>
+        <td>Verify secure token persistence inside Android KeyStore</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.69s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC455</td>
+        <td>Security & Performance</td>
+        <td>Verify root detection check response speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.67s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC456</td>
+        <td>Security & Performance</td>
+        <td>Verify REST API latency under concurrency simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.26s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC457</td>
+        <td>Security & Performance</td>
+        <td>Verify background service footprint on low-memory profiles</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC458</td>
+        <td>Security & Performance</td>
+        <td>Verify memory leak checks on multiple dashboard transitions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.08s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC459</td>
+        <td>Security & Performance</td>
+        <td>Verify CPU usage profile during real-time image scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.24s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC460</td>
+        <td>Security & Performance</td>
+        <td>Verify thread pool health during bulk history exports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC461</td>
+        <td>Security & Performance</td>
+        <td>Finalize performance suite benchmarks execution</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC462</td>
+        <td>Security & Performance</td>
+        <td>Verify SQL injection filters in text input</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC463</td>
+        <td>Security & Performance</td>
+        <td>Verify SSL pinning validation status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.71s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC464</td>
+        <td>Security & Performance</td>
+        <td>Verify AES-256 local database encryption latency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.78s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC465</td>
+        <td>Security & Performance</td>
+        <td>Verify secure token persistence inside Android KeyStore</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC466</td>
+        <td>Security & Performance</td>
+        <td>Verify root detection check response speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.51s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC467</td>
+        <td>Security & Performance</td>
+        <td>Verify REST API latency under concurrency simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.65s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC468</td>
+        <td>Security & Performance</td>
+        <td>Verify background service footprint on low-memory profiles</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC469</td>
+        <td>Security & Performance</td>
+        <td>Verify memory leak checks on multiple dashboard transitions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.36s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC470</td>
+        <td>Security & Performance</td>
+        <td>Verify CPU usage profile during real-time image scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.4s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC471</td>
+        <td>Security & Performance</td>
+        <td>Verify thread pool health during bulk history exports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.91s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC472</td>
+        <td>Security & Performance</td>
+        <td>Finalize performance suite benchmarks execution</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.11s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC473</td>
+        <td>Security & Performance</td>
+        <td>Verify SQL injection filters in text input</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.92s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC474</td>
+        <td>Security & Performance</td>
+        <td>Verify SSL pinning validation status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.61s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC475</td>
+        <td>Security & Performance</td>
+        <td>Verify AES-256 local database encryption latency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC476</td>
+        <td>Security & Performance</td>
+        <td>Verify secure token persistence inside Android KeyStore</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.66s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC477</td>
+        <td>Security & Performance</td>
+        <td>Verify root detection check response speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.18s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC478</td>
+        <td>Security & Performance</td>
+        <td>Verify REST API latency under concurrency simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC479</td>
+        <td>Security & Performance</td>
+        <td>Verify background service footprint on low-memory profiles</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.59s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC480</td>
+        <td>Security & Performance</td>
+        <td>Verify memory leak checks on multiple dashboard transitions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.45s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC481</td>
+        <td>Security & Performance</td>
+        <td>Verify CPU usage profile during real-time image scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.87s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC482</td>
+        <td>Security & Performance</td>
+        <td>Verify thread pool health during bulk history exports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.31s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC483</td>
+        <td>Security & Performance</td>
+        <td>Finalize performance suite benchmarks execution</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.83s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC484</td>
+        <td>Security & Performance</td>
+        <td>Verify SQL injection filters in text input</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.43s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC485</td>
+        <td>Security & Performance</td>
+        <td>Verify SSL pinning validation status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.58s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC486</td>
+        <td>Security & Performance</td>
+        <td>Verify AES-256 local database encryption latency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.73s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC487</td>
+        <td>Security & Performance</td>
+        <td>Verify secure token persistence inside Android KeyStore</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.93s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC488</td>
+        <td>Security & Performance</td>
+        <td>Verify root detection check response speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.42s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC489</td>
+        <td>Security & Performance</td>
+        <td>Verify REST API latency under concurrency simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.12s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC490</td>
+        <td>Security & Performance</td>
+        <td>Verify background service footprint on low-memory profiles</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.2s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC491</td>
+        <td>Security & Performance</td>
+        <td>Verify memory leak checks on multiple dashboard transitions</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC492</td>
+        <td>Security & Performance</td>
+        <td>Verify CPU usage profile during real-time image scanning</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.63s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC493</td>
+        <td>Security & Performance</td>
+        <td>Verify thread pool health during bulk history exports</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.95s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC494</td>
+        <td>Security & Performance</td>
+        <td>Finalize performance suite benchmarks execution</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.34s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC495</td>
+        <td>Security & Performance</td>
+        <td>Verify SQL injection filters in text input</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.8s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC496</td>
+        <td>Security & Performance</td>
+        <td>Verify SSL pinning validation status</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.32s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC497</td>
+        <td>Security & Performance</td>
+        <td>Verify AES-256 local database encryption latency</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.91s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC498</td>
+        <td>Security & Performance</td>
+        <td>Verify secure token persistence inside Android KeyStore</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.55s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC499</td>
+        <td>Security & Performance</td>
+        <td>Verify root detection check response speed</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">1.0s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+    <tr class="">
+        <td class="text-center font-weight-bold">TC500</td>
+        <td>Security & Performance</td>
+        <td>Verify REST API latency under concurrency simulation</td>
+        <td class="text-center"><span class="badge badge-success">PASS</span></td>
+        <td class="text-center">0.49s</td>
+        <td>Success</td>
+        <td class="text-center">N/A</td>
+    </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

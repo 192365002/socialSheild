@@ -1,0 +1,79 @@
+"""
+SocialShield Backend - FastAPI
+AI-powered multi-modal fraud & deepfake detection API
+"""
+from fastapi import FastAPI, HTTPException, Depends, UploadFile, File, Form
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from contextlib import asynccontextmanager
+import uvicorn
+import logging
+
+from routers import image_router, video_router, audio_router, text_router, url_router, profile_router, history_router
+from utils.auth import verify_token
+from utils.database import init_db
+from ml.models import model_registry
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logger.info("SocialShield API starting up...")
+    await init_db()
+    try:
+        model_registry.load_all()
+    except Exception as e:
+        logger.error(f"Failed to load models: {e}")
+    yield
+    logger.info("SocialShield API shutting down...")
+
+app = FastAPI(
+    title="SocialShield API",
+    description="AI-powered digital fraud and deepfake detection system",
+    version="1.0.0",
+    lifespan=lifespan
+)
+
+ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:3000",
+    "*",  # Allow all for local dev; restrict in production
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(image_router.router, prefix="/api/v1/scan", tags=["Image Detection"])
+app.include_router(video_router.router, prefix="/api/v1/scan", tags=["Video Detection"])
+app.include_router(audio_router.router, prefix="/api/v1/scan", tags=["Audio Detection"])
+app.include_router(text_router.router, prefix="/api/v1/scan", tags=["Text Detection"])
+app.include_router(url_router.router, prefix="/api/v1/scan", tags=["URL Detection"])
+app.include_router(profile_router.router, prefix="/api/v1/scan", tags=["Profile Analysis"])
+app.include_router(history_router.router, prefix="/api/v1", tags=["History"])
+
+@app.get("/")
+async def root():
+    return {"status": "active", "service": "SocialShield API", "version": "1.0.0"}
+
+@app.get("/health")
+async def health():
+    from utils.auth import _firebase_initialized
+    from utils.database import _db, _last_db_error
+    return {
+        "status": "healthy",
+        "models": "loaded",
+        "firebase_initialized": _firebase_initialized,
+        "database_type": "firestore" if _db is not None else "mock_json",
+        "last_db_error": _last_db_error
+    }
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
