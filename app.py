@@ -10,6 +10,22 @@ from models import get_db, init_db, is_mock
 import auth
 import ai_engine
 
+# ── Firebase Admin SDK Initialization ──────────────────────────
+try:
+    import firebase_admin
+    from firebase_admin import credentials, auth as fb_auth
+
+    _fb_cred_path = os.environ.get('FIREBASE_CREDENTIALS_PATH', './firebase-credentials.json')
+    if not firebase_admin._apps:  # avoid double-init on reload
+        _cred = credentials.Certificate(_fb_cred_path)
+        firebase_admin.initialize_app(_cred)
+    FIREBASE_ADMIN_AVAILABLE = True
+    print('✅ Firebase Admin SDK initialized.')
+except Exception as _fb_err:
+    FIREBASE_ADMIN_AVAILABLE = False
+    print(f'⚠️  Firebase Admin SDK not available: {_fb_err}')
+    print('   Registration/Login will fall back to backend-only auth.')
+
 app = Flask(__name__)
 # Enable CORS for all origins in development, restrict in production
 CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -273,6 +289,64 @@ def reset_password():
 @auth.token_required
 def get_profile():
     return jsonify({'user': request.user}), 200
+
+
+@app.route('/api/auth/firebase-login', methods=['POST'])
+def firebase_login():
+    """
+    Exchange a Firebase ID token for a backend JWT.
+    Frontend calls Firebase Auth, gets an idToken, then POSTs it here.
+    We verify it with firebase-admin, upsert the user in MongoDB,
+    and return a signed backend JWT for all protected API calls.
+    """
+    if not FIREBASE_ADMIN_AVAILABLE:
+        return jsonify({'message': 'Firebase Auth not configured on server.'}), 503
+
+    data = request.get_json() or {}
+    id_token = data.get('idToken')
+    if not id_token:
+        return jsonify({'message': 'idToken is required.'}), 400
+
+    try:
+        decoded = fb_auth.verify_id_token(id_token)
+    except Exception as e:
+        return jsonify({'message': f'Invalid Firebase token: {str(e)}'}), 401
+
+    uid   = decoded.get('uid')
+    email = decoded.get('email', '')
+    name  = decoded.get('name') or decoded.get('display_name') or email.split('@')[0]
+
+    # Upsert user in MongoDB so backend has a record
+    db        = get_db()
+    users_col = db['users']
+    existing  = users_col.find_one({'firebase_uid': uid})
+
+    if not existing:
+        import bcrypt, uuid
+        new_user = {
+            'firebase_uid': uid,
+            'email':        email,
+            'name':         name,
+            'role':         'user',
+            'is_verified':  True,         # Firebase already verified the email
+            'created_at':   datetime.datetime.utcnow(),
+            'password':     None,         # No local password — Firebase handles auth
+        }
+        result   = users_col.insert_one(new_user)
+        user_id  = str(result.inserted_id)
+    else:
+        user_id = str(existing['_id'])
+        # Keep name/email in sync
+        users_col.update_one({'firebase_uid': uid}, {'$set': {'name': name, 'email': email}})
+
+    token = auth.generate_token(user_id, 'user', name, email)
+    return jsonify({
+        'token': token,
+        'name':  name,
+        'email': email,
+        'role':  'user',
+        'message': 'Authenticated via Firebase.'
+    }), 200
 
 
 # --- FRAUD SCANNING ENDPOINTS ---

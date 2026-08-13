@@ -34,7 +34,15 @@
         <a href="#scanner" class="nav-link">Scanner</a>
         <a href="#about" class="nav-link">About</a>
       </div>
-      <a href="#scanner" class="nav-cta">Try Now</a>
+      <div class="nav-actions">
+        <a href="#scanner" class="nav-cta">Try Now</a>
+        <button class="nav-login-btn" id="navLoginBtn" onclick="openAuthModal('login')">Login</button>
+        <div class="nav-user" id="navUser" style="display:none">
+          <div class="nav-avatar" id="navAvatar">U</div>
+          <span id="navUserName">User</span>
+          <button class="nav-logout-btn" onclick="logoutUser()">Logout</button>
+        </div>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -382,6 +390,343 @@
     </div>
   </footer>
 
+  <!-- Auth Modal -->
+  <div class="auth-overlay" id="authOverlay" onclick="closeAuthModal(event)">
+    <div class="auth-modal" id="authModal">
+      <button class="auth-close" onclick="document.getElementById('authOverlay').style.display='none'">&times;</button>
+
+      <!-- Logo -->
+      <div class="auth-logo">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z" fill="url(#authLogoGrad)"/>
+          <path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs><linearGradient id="authLogoGrad" x1="3" y1="2" x2="21" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4FF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+        </svg>
+        <span>SocialShield</span>
+      </div>
+
+      <!-- Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLogin" onclick="switchTab('login')">Login</button>
+        <button class="auth-tab" id="tabRegister" onclick="switchTab('register')">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <form class="auth-form" id="loginForm" onsubmit="handleLogin(event)">
+        <div class="auth-field">
+          <label>Email</label>
+          <input type="email" id="loginEmail" placeholder="your@email.com" required autocomplete="username" />
+        </div>
+        <div class="auth-field">
+          <label>Password</label>
+          <input type="password" id="loginPassword" placeholder="••••••••" required autocomplete="current-password" />
+        </div>
+        <div class="auth-error" id="loginError"></div>
+        <button type="submit" class="auth-submit" id="loginSubmit">
+          <span class="auth-btn-text">Login</span>
+          <span class="auth-btn-loading" style="display:none">Signing in…</span>
+        </button>
+        <p class="auth-switch">No account? <a href="#" onclick="switchTab('register');return false;">Register here</a></p>
+      </form>
+
+      <!-- Register Form -->
+      <form class="auth-form" id="registerForm" style="display:none" onsubmit="handleRegister(event)">
+        <div class="auth-field">
+          <label>Full Name</label>
+          <input type="text" id="regName" placeholder="John Doe" required />
+        </div>
+        <div class="auth-field">
+          <label>Email</label>
+          <input type="email" id="regEmail" placeholder="your@email.com" required autocomplete="username" />
+        </div>
+        <div class="auth-field">
+          <label>Password</label>
+          <input type="password" id="regPassword" placeholder="Min 8 characters" minlength="8" required autocomplete="new-password" />
+        </div>
+        <div class="auth-error" id="registerError"></div>
+        <button type="submit" class="auth-submit" id="registerSubmit">
+          <span class="auth-btn-text">Create Account</span>
+          <span class="auth-btn-loading" style="display:none">Creating…</span>
+        </button>
+        <p class="auth-switch">Have an account? <a href="#" onclick="switchTab('login');return false;">Login here</a></p>
+      </form>
+    </div>
+  </div>
+
+  <style>
+    /* ── Auth Modal Styles ── */
+    .nav-actions { display:flex; align-items:center; gap:12px; }
+    .nav-login-btn {
+      background: transparent;
+      border: 1.5px solid rgba(0,212,255,0.5);
+      color: #00D4FF;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .nav-login-btn:hover { background: rgba(0,212,255,0.1); border-color: #00D4FF; }
+    .nav-user { display:flex; align-items:center; gap:8px; }
+    .nav-avatar {
+      width:32px; height:32px; border-radius:50%;
+      background: linear-gradient(135deg,#00D4FF,#8B5CF6);
+      display:flex; align-items:center; justify-content:center;
+      font-weight:700; font-size:0.85rem; color:#fff;
+    }
+    .nav-user span { color:#e2e8f0; font-size:0.88rem; font-weight:500; }
+    .nav-logout-btn {
+      background:transparent; border:1px solid rgba(255,255,255,0.2);
+      color:#94a3b8; padding:5px 12px; border-radius:14px;
+      font-size:0.8rem; cursor:pointer; transition:all 0.2s; font-family:inherit;
+    }
+    .nav-logout-btn:hover { border-color:#ff4444; color:#ff4444; }
+
+    .auth-overlay {
+      display:none; position:fixed; inset:0;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      align-items:center; justify-content:center;
+    }
+    .auth-overlay.open { display:flex; }
+    .auth-modal {
+      position:relative;
+      background: linear-gradient(135deg, rgba(15,23,42,0.98), rgba(30,41,59,0.98));
+      border: 1px solid rgba(0,212,255,0.2);
+      border-radius: 20px;
+      padding: 40px 36px 32px;
+      width: 100%; max-width: 420px;
+      box-shadow: 0 0 80px rgba(0,212,255,0.1), 0 25px 50px rgba(0,0,0,0.5);
+      animation: slideUp 0.3s ease;
+    }
+    @keyframes slideUp {
+      from { opacity:0; transform:translateY(30px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    .auth-close {
+      position:absolute; top:14px; right:18px;
+      background:none; border:none; color:#64748b;
+      font-size:1.6rem; cursor:pointer; line-height:1;
+      transition:color 0.2s;
+    }
+    .auth-close:hover { color:#e2e8f0; }
+    .auth-logo {
+      display:flex; align-items:center; gap:10px;
+      justify-content:center; margin-bottom:24px;
+    }
+    .auth-logo span {
+      font-size:1.4rem; font-weight:700;
+      background:linear-gradient(135deg,#00D4FF,#8B5CF6);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    .auth-tabs {
+      display:flex; background:rgba(255,255,255,0.05);
+      border-radius:12px; padding:4px; margin-bottom:24px;
+    }
+    .auth-tab {
+      flex:1; padding:9px; border:none; background:none;
+      color:#64748b; font-size:0.9rem; font-weight:600;
+      cursor:pointer; border-radius:9px; transition:all 0.2s; font-family:inherit;
+    }
+    .auth-tab.active {
+      background: linear-gradient(135deg,#00D4FF22,#8B5CF622);
+      color:#00D4FF; border:1px solid rgba(0,212,255,0.3);
+    }
+    .auth-field { margin-bottom:16px; }
+    .auth-field label {
+      display:block; font-size:0.82rem; font-weight:600;
+      color:#94a3b8; margin-bottom:6px; letter-spacing:0.03em;
+    }
+    .auth-field input {
+      width:100%; padding:12px 16px;
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:10px; color:#e2e8f0;
+      font-size:0.95rem; font-family:inherit;
+      transition:border-color 0.2s; box-sizing:border-box;
+    }
+    .auth-field input:focus {
+      outline:none; border-color:#00D4FF;
+      box-shadow: 0 0 0 3px rgba(0,212,255,0.12);
+    }
+    .auth-field input::placeholder { color:#475569; }
+    .auth-error {
+      color:#ff4444; font-size:0.82rem;
+      min-height:20px; margin-bottom:8px;
+      padding: 0 2px;
+    }
+    .auth-submit {
+      width:100%; padding:13px;
+      background: linear-gradient(135deg,#00D4FF,#8B5CF6);
+      border:none; border-radius:12px;
+      color:#fff; font-size:1rem; font-weight:700;
+      cursor:pointer; transition:opacity 0.2s, transform 0.1s;
+      font-family:inherit; margin-top:4px;
+    }
+    .auth-submit:hover { opacity:0.9; transform:translateY(-1px); }
+    .auth-submit:active { transform:translateY(0); }
+    .auth-switch {
+      text-align:center; margin-top:16px;
+      font-size:0.85rem; color:#64748b;
+    }
+    .auth-switch a { color:#00D4FF; text-decoration:none; font-weight:600; }
+    .auth-switch a:hover { text-decoration:underline; }
+  </style>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
   <script src="app.js"></script>
+  <script>
+    // ── Firebase Web Initialization ────────────────────────────
+    const firebaseConfig = {
+      apiKey: "AIzaSyCiFK0MuPxZZarqfyvCbFssF-LOUc1mo1Y",
+      authDomain: "socialsheild-7cd7c.firebaseapp.com",
+      projectId: "socialsheild-7cd7c",
+      storageBucket: "socialsheild-7cd7c.firebasestorage.app",
+      messagingSenderId: "969236490629",
+      appId: "1:969236490629:web:fe536d4372855f7bee7cec",
+      measurementId: "G-2MY22W04ZR"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // ── Auth Token Storage ────────────────────────────────────
+    let authToken = localStorage.getItem('ss_token') || null;
+    let currentUser = JSON.parse(localStorage.getItem('ss_user') || 'null');
+
+    // Show logged-in state on load
+    if (currentUser && authToken) showLoggedIn(currentUser);
+
+    function openAuthModal(tab = 'login') {
+      document.getElementById('authOverlay').classList.add('open');
+      switchTab(tab);
+    }
+    function closeAuthModal(e) {
+      if (e.target.id === 'authOverlay') document.getElementById('authOverlay').classList.remove('open');
+    }
+    function switchTab(tab) {
+      document.getElementById('loginForm').style.display    = tab === 'login'    ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = tab === 'register' ? 'block' : 'none';
+      document.getElementById('tabLogin').classList.toggle('active',    tab === 'login');
+      document.getElementById('tabRegister').classList.toggle('active', tab === 'register');
+      document.getElementById('loginError').textContent    = '';
+      document.getElementById('registerError').textContent = '';
+    }
+
+    async function handleLogin(e) {
+      e.preventDefault();
+      const email    = document.getElementById('loginEmail').value.trim();
+      const password = document.getElementById('loginPassword').value;
+      const errEl    = document.getElementById('loginError');
+      const btn      = document.getElementById('loginSubmit');
+      errEl.textContent = '';
+      btn.querySelector('.auth-btn-text').style.display    = 'none';
+      btn.querySelector('.auth-btn-loading').style.display = 'inline';
+      btn.disabled = true;
+      try {
+        // 1. Authenticate with Firebase Client SDK
+        const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
+        const idToken = await userCredential.user.getIdToken();
+
+        // 2. Exchange Firebase ID Token for Backend JWT
+        const res = await fetch(`${API_BASE}/api/auth/firebase-login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ idToken })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.message || 'Login failed on backend');
+
+        authToken   = data.token;
+        currentUser = { name: data.name, email: data.email, role: data.role };
+        localStorage.setItem('ss_token', authToken);
+        localStorage.setItem('ss_user',  JSON.stringify(currentUser));
+        showLoggedIn(currentUser);
+        document.getElementById('authOverlay').classList.remove('open');
+      } catch (err) {
+        errEl.textContent = err.message;
+      } finally {
+        btn.querySelector('.auth-btn-text').style.display    = 'inline';
+        btn.querySelector('.auth-btn-loading').style.display = 'none';
+        btn.disabled = false;
+      }
+    }
+
+    async function handleRegister(e) {
+      e.preventDefault();
+      const name     = document.getElementById('regName').value.trim();
+      const email    = document.getElementById('regEmail').value.trim();
+      const password = document.getElementById('regPassword').value;
+      const errEl    = document.getElementById('registerError');
+      const btn      = document.getElementById('registerSubmit');
+      errEl.style.color = '#ff4444';
+      errEl.textContent = '';
+      btn.querySelector('.auth-btn-text').style.display    = 'none';
+      btn.querySelector('.auth-btn-loading').style.display = 'inline';
+      btn.disabled = true;
+      try {
+        // 1. Create account in Firebase Client SDK
+        const userCredential = await firebase.auth().createUserWithEmailAndPassword(email, password);
+        
+        // 2. Update display name in Firebase profile
+        await userCredential.user.updateProfile({ displayName: name });
+        
+        errEl.style.color    = '#06FFA5';
+        errEl.textContent    = '✅ Account created! Logging you in...';
+
+        // 3. Get ID Token and exchange it on backend
+        const idToken = await userCredential.user.getIdToken();
+        const res = await fetch(`${API_BASE}/api/auth/firebase-login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ idToken })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.message || 'Token exchange failed');
+
+        authToken   = data.token;
+        currentUser = { name: data.name, email: data.email, role: data.role };
+        localStorage.setItem('ss_token', authToken);
+        localStorage.setItem('ss_user',  JSON.stringify(currentUser));
+        
+        setTimeout(() => {
+          showLoggedIn(currentUser);
+          document.getElementById('authOverlay').classList.remove('open');
+        }, 1000);
+
+      } catch (err) {
+        errEl.style.color    = '#ff4444';
+        errEl.textContent    = err.message;
+      } finally {
+        btn.querySelector('.auth-btn-text').style.display    = 'inline';
+        btn.querySelector('.auth-btn-loading').style.display = 'none';
+        btn.disabled = false;
+      }
+    }
+
+    function showLoggedIn(user) {
+      document.getElementById('navLoginBtn').style.display = 'none';
+      const navUser = document.getElementById('navUser');
+      navUser.style.display = 'flex';
+      document.getElementById('navAvatar').textContent   = (user.name || 'U')[0].toUpperCase();
+      document.getElementById('navUserName').textContent = user.name || user.email;
+    }
+
+    async function logoutUser() {
+      try {
+        await firebase.auth().signOut();
+      } catch (e) {
+        console.error("Firebase logout error:", e);
+      }
+      authToken   = null;
+      currentUser = null;
+      localStorage.removeItem('ss_token');
+      localStorage.removeItem('ss_user');
+      document.getElementById('navLoginBtn').style.display = 'inline-block';
+      document.getElementById('navUser').style.display     = 'none';
+    }
+  </script>
 </body>
 </html>

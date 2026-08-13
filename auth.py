@@ -9,6 +9,15 @@ from models import get_db
 
 JWT_SECRET = os.environ.get('JWT_SECRET', 'socialshield-super-secret-key-1337')
 
+# Dev token allows testing without a real Firebase/JWT login
+DEV_TOKEN = 'dev_user_web_token_12345678901234567890'
+DEV_USER_PAYLOAD = {
+    'sub': 'dev_user_001',
+    'role': 'user',
+    'name': 'Dev User',
+    'email': 'dev@socialshield.local'
+}
+
 def generate_token(user_id, role, name, email):
     payload = {
         'sub': user_id,
@@ -20,6 +29,9 @@ def generate_token(user_id, role, name, email):
     return jwt.encode(payload, JWT_SECRET, algorithm='HS256')
 
 def decode_token(token):
+    # Allow the dev bypass token for local development
+    if token == DEV_TOKEN:
+        return DEV_USER_PAYLOAD
     try:
         payload = jwt.decode(token, JWT_SECRET, algorithms=['HS256'])
         return payload

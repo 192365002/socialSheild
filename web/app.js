@@ -1,9 +1,9 @@
 /* ══════════════════════════════════
    SocialShield Web App — JavaScript
-   Backend: https://socialsheild.onrender.com
+   Backend: http://localhost:5000 (local dev)
    ══════════════════════════════════ */
 
-const API_BASE = "https://social-shield-app-backend.onrender.com";
+const API_BASE = "http://localhost:5000";
 // Dev mode: backend accepts any token when Firebase is not initialized
 const DEV_TOKEN = "dev_user_web_token_12345678901234567890";
 
@@ -158,10 +158,11 @@ async function startScan() {
     const formData = new FormData();
     formData.append("file", selectedFile);
 
+    const token = localStorage.getItem("ss_token") || DEV_TOKEN;
     const response = await fetch(`${API_BASE}/api/v1/scan/image`, {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${DEV_TOKEN}`
+        "Authorization": `Bearer ${token}`
       },
       body: formData
     });
